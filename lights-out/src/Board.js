@@ -34,6 +34,7 @@ class Board extends Component {
 
   createBoard() {
     let board = [];
+    // TODO: create array-of-arrays of true/false values
     for (let y = 0; y < this.props.nrows; y++) {
       let row = [];
       for (let x = 0; x < this.props.ncols; x++) {
@@ -43,6 +44,8 @@ class Board extends Component {
     }
     return board;
   }
+
+  /** handle changing a cell: update board & determine if winner */
 
   flipCellsAround(coord) {
     let { ncols, nrows } = this.props;
@@ -63,12 +66,14 @@ class Board extends Component {
     flipCell(y - 1, x); //flip below
     flipCell(y + 1, x); //flip above
 
-    let hasWon = false;
+    let hasWon = board.every((row) => row.every((cell) => !cell));
 
     this.setState({ board, hasWon });
   }
 
-  render() {
+  /** Render game board or winning message. */
+
+  makeTable() {
     let tableBoard = [];
     for (let y = 0; y < this.props.nrows; y++) {
       let row = [];
@@ -88,6 +93,26 @@ class Board extends Component {
       <table className="Board">
         <tbody>{tableBoard}</tbody>
       </table>
+    );
+  }
+  render() {
+    return (
+      <div>
+        {this.state.hasWon ? (
+          <div className="winner">
+            <span className="neon-orange">YOU</span>
+            <span className="neon-blue">WIN!</span>
+          </div>
+        ) : (
+          <div>
+            <div className="Board-title">
+              <div className="neon-orange">Lights</div>
+              <div className="neon-blue">Out</div>
+            </div>
+            {this.makeTable()}
+          </div>
+        )}
+      </div>
     );
   }
 }
