@@ -8,13 +8,17 @@ class TodoList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      todos: [],
+      todos: JSON.parse(window.localStorage.getItem("todos") || "[]"),
     };
 
     this.create = this.create.bind(this);
     this.remove = this.remove.bind(this);
     this.update = this.update.bind(this);
     this.toggleCompletion = this.toggleCompletion.bind(this);
+  }
+
+  componentDidUpdate() {
+    window.localStorage.setItem("todos", JSON.stringify(this.state.todos));
   }
 
   create(newTodo) {
