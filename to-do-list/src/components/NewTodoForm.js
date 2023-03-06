@@ -1,5 +1,6 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import { v4 as uuid } from "uuid";
+import "./NewTodoForm.css";
 
 class NewTodoForm extends Component {
   constructor(props) {
