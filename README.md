@@ -5,7 +5,6 @@
 ### [Redux Cart](https://github.com/ahmedalam98/React-mini-apps/tree/main/redux-toolkit)
 
 ![Preview](./redux-toolkit/assets/preview.png)
-P
 
 ### [To Do List](https://github.com/ahmedalam98/React-mini-apps/tree/main/to-do-list)
 
