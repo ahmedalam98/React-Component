@@ -4,12 +4,25 @@
 
 ### [Redux Cart](https://github.com/ahmedalam98/React-mini-apps/tree/main/redux-toolkit)
 
+![Preview](./redux-toolkit/assets/preview.png)
+P
+
 ### [To Do List](https://github.com/ahmedalam98/React-mini-apps/tree/main/to-do-list)
+
+![Preview](./to-do-list/assets/preview.png)
 
 ### [Lights Out](https://github.com/ahmedalam98/React-mini-apps/tree/main/lights-out)
 
+![Preview](./lights-out/assets/preview.png)
+
 ### [Hangman](https://github.com/ahmedalam98/React-mini-apps/tree/main/hangman)
+
+![Preview](./hangman/assets/preview.png)
 
 ### [Pokemon](https://github.com/ahmedalam98/React-mini-apps/tree/main/pokemon)
 
+![Preview](./pokemon/assets/preview.png)
+
 ### [Dice Animation](https://github.com/ahmedalam98/React-mini-apps/tree/main/dice)
+
+![Preview](./dice/assets/preview.png)
