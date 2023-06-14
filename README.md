@@ -6,6 +6,10 @@
 
 ![Preview](./redux-toolkit/assets/preview.png)
 
+### [React Query](https://github.com/ahmedalam98/React-mini-apps/tree/main/react-query-todo)
+
+![Preview](./react-query-todo/assets/preview.png)
+
 ### [To Do List](https://github.com/ahmedalam98/React-mini-apps/tree/main/to-do-list)
 
 ![Preview](./to-do-list/assets/preview.png)
